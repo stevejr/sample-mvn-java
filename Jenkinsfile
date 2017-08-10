@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "mvn package"
+                sh "cd NumberGenerator && mvn package"
             }
         }
     }
