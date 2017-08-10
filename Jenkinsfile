@@ -13,5 +13,10 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            junit 'NumberGenerator/target/surefire-reports/**/*.xml'
+        }
+    }
 }
 
